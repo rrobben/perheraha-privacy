@@ -23,27 +23,50 @@
 <body>
     <h1>Privacy Policy — Perheraha</h1>
 
-    <p>Perheraha is a personal family finance tracking app for Android. Your privacy is important to us. This policy explains how your data is handled.</p>
+    <p>Perheraha is a personal family finance tracking app for Android, with a companion app for Windows. Your privacy is important to us. This policy explains how your data is handled.</p>
 
     <h2>Data Storage</h2>
-    <p>All data you enter into Perheraha — including transactions, account balances, family member names, loans, and subscriptions — is stored <strong>locally on your device only</strong>. No data is transmitted to any server or third party.</p>
+    <p>All data you enter into Perheraha — including transactions, account balances, family member names, loans, and subscriptions — is stored <strong>locally on your own devices</strong>. We (the developer) never receive any of it. Data leaves your device only through the optional features described below, which you turn on yourself.</p>
 
     <h2>Data Collection</h2>
     <ul>
-        <li>We do not collect, transmit, or share any personal data</li>
+        <li>We do not collect, receive, or share any personal data</li>
         <li>We do not use analytics, advertising, or tracking</li>
-        <li>We do not require an internet connection</li>
+        <li>Perheraha works without an internet connection; only the optional bank sync uses the internet</li>
         <li>We do not access any data outside of the app</li>
+    </ul>
+
+    <h2>Bank Sync (optional)</h2>
+    <p>If you connect a bank, Perheraha fetches your transactions, balances, and account details (such as account names, IBANs, and the names of payers and payees) from the banks you authorise, through <strong>Enable Banking</strong>, a PSD2 open banking provider.</p>
+    <ul>
+        <li>The app connects directly to Enable Banking using your own Enable Banking application credentials, which are stored encrypted on your device. Your private key never leaves the device.</li>
+        <li>You approve access on your bank's own website. When you do, your browser returns to an address on this website with a one-time code that only works together with your own Enable Banking key.</li>
+        <li>You can remove a bank connection in the app at any time.</li>
+        <li>No bank data is sent to us. Enable Banking's handling of the data is described in its <a href="https://enablebanking.com/privacy/">privacy policy</a>.</li>
+    </ul>
+
+    <h2>Phone Sync (optional)</h2>
+    <p>The Perheraha Windows app can share your data with your own phones over your home network.</p>
+    <ul>
+        <li>Phones are paired by scanning a QR code shown on the computer. The code contains an encryption key that stays on your paired devices.</li>
+        <li>Data is end-to-end encrypted and sent directly between your devices on the local network. No internet connection, cloud service, or server is involved.</li>
+        <li>You can stop syncing at any time in the app's Settings.</li>
     </ul>
 
     <h2>Data Deletion</h2>
     <ul>
-        <li>You can delete all your data at any time from the app's Settings ("Clear all data &amp; restart")</li>
-        <li>Uninstalling the app also deletes all data permanently</li>
+        <li>You can delete all your data at any time from the app's Settings ("Clear all data &amp; restart"). On a phone paired for phone sync, choose "Stop syncing" first.</li>
+        <li>Removing a bank connection in the app ends Perheraha's access to that bank</li>
+        <li>Uninstalling the app also deletes all data on that device permanently. Copies on your other paired devices and in backups you have exported are not affected.</li>
     </ul>
 
     <h2>Permissions</h2>
-    <p>Perheraha may request access to your device's file system solely for the purpose of importing CSV bank statement files. No files are uploaded or shared.</p>
+    <ul>
+        <li><strong>Camera</strong> — only to scan the pairing QR code for phone sync. The code is read on the device using Google's ML Kit, and Perheraha does not store or send the camera images. ML Kit sends Google technical diagnostics about the scanner (such as device model, OS and app version, a per-installation identifier, and performance metrics), which Google states it does not share with third parties.</li>
+        <li><strong>Internet and local network</strong> — only for bank sync and phone sync.</li>
+        <li><strong>Biometrics</strong> — for the optional app lock. Fingerprint and face data are handled by Android and are never accessible to the app.</li>
+        <li><strong>Files</strong> — only when you choose a file to import (PDF or CSV bank statements, JSON backups) or to save an export. No files are uploaded or shared.</li>
+    </ul>
 
     <h2>Data Export</h2>
     <p>Perheraha includes a backup feature that lets you export your data as a JSON file. This export is entirely user-initiated — the app will never share your data automatically. Exported files are saved to your device or shared via your device's share sheet at your discretion. No data is sent to any server.</p>
@@ -57,6 +80,6 @@
     <h2>Contact</h2>
     <p>If you have questions about this privacy policy, please contact us at: <strong>roope.poyry1@gmail.com</strong></p>
 
-    <p class="updated">Last updated: March 6, 2026</p>
+    <p class="updated">Last updated: October 18, 2026</p>
 </body>
 </html>
